@@ -30,14 +30,27 @@ Evaluasi Pembelajaran:
 
 - **Proyer Pertama:** : Membangun aplikasi web sebagai proyek akhir dengan memanfaatkan setiap materi yang telah diserap, seperti HTML Form Lanjutan, Teknik Layouting dengan CSS Grid, dan Web Component.
 - **Proyek Akhir** : Membangun aplikasi web sebagai proyek akhir dengan memanfaatkan setiap materi yang telah diserap, seperti pengelolaan packages dengan package manager, webpack sebagai module bundler, dan menampilkan data dari REST API.
-Total jam yang dibutuhkan untuk menyelesaikan kelas ini adalah 25 jam.
+
+Total jam yang dibutuhkan untuk menyelesaikan kelas ini, mulai dari persiapan kelas sampai evaluasi belajar, adalah **80 jam**.
 
 ## Tutorial Submission
 
 Tata cara menjalankan project:
 
-1. Buat User baru
+1. Install semua package yang berada di package.json
 
 ```
-adduser dicoding
+npm install --yes
+```
+
+2. Untuk menjalankan development
+
+```
+npx webpack serve --config webpack.dev.js
+```
+
+3. Untuk menjalankan prettier
+
+```
+npx prettier . --write
 ```
