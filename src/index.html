@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="icon" href="icon.svg" />
+  </head>
+  <body>
+    <app-bar></app-bar>
+    <main>
+      <note-search
+        search-by="title"
+        placeholder-text="Cari Catatan"
+      ></note-search>
+      <section id="noteFormSection">
+        <h2>Tambah Catatan Baru</h2>
+        <note-form-component></note-form-component>
+      </section>
+      <section id="noteSection">
+        <h2 class="note-heading">List Catatan</h2>
+        <div id="loading">
+          <div class="loader">
+            <div></div>
+          </div>
+        </div>
+        <note-component data-note-container="NoteContainer"></note-component>
+      </section>
+      <section id="archivedNoteSection">
+        <h2 class="note-heading">List Arsip Catatan</h2>
+        <div id="loading">
+          <div class="loader">
+            <div></div>
+          </div>
+        </div>
+        <archived-note-component
+          data-archived-note-container="archivedNoteList"
+        ></archived-note-component>
+      </section>
+    </main>
+    <footer-bar></footer-bar>
+  </body>
+</html>
